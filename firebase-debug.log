@@ -1,0 +1,49 @@
+[debug] [2025-04-24T15:34:20.326Z] ----------------------------------------------------------------------
+[debug] [2025-04-24T15:34:20.328Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\OneDrive\Desktop\importantyes\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-04-24T15:34:20.328Z] CLI Version:   14.2.1
+[debug] [2025-04-24T15:34:20.328Z] Platform:      win32
+[debug] [2025-04-24T15:34:20.328Z] Node Version:  v22.8.0
+[debug] [2025-04-24T15:34:20.329Z] Time:          Thu Apr 24 2025 22:34:20 GMT+0700 (เวลาอินโดจีน)
+[debug] [2025-04-24T15:34:20.329Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-24T15:34:20.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-24T15:34:20.477Z] > authorizing via signed-in user (6733082821@student.chula.ac.th)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-04-24T15:34:20.485Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-24T15:34:20.485Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-24T15:34:20.485Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-04-24T15:34:20.489Z] [hub] writing locator at C:\Users\Admin\AppData\Local\Temp\hub-gitlab-85c05.json
+[debug] [2025-04-24T15:34:20.500Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:20.500Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:20.501Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gitlab-85c05/sites 
+[debug] [2025-04-24T15:34:21.302Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gitlab-85c05/sites 200
+[debug] [2025-04-24T15:34:21.302Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gitlab-85c05/sites {"sites":[{"name":"projects/gitlab-85c05/sites/gitlab-85c05","defaultUrl":"https://gitlab-85c05.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-24T15:34:21.303Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:21.303Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:21.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05/webApps/-/config [none]
+[debug] [2025-04-24T15:34:22.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05/webApps/-/config 200
+[debug] [2025-04-24T15:34:22.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05/webApps/-/config {"projectId":"gitlab-85c05","storageBucket":"gitlab-85c05.firebasestorage.app","apiKey":"AIzaSyD8CXE__9338qR9rNs5L_Y7X5tqCxS2z_U","authDomain":"gitlab-85c05.firebaseapp.com","messagingSenderId":"821959175305"}
+[debug] [2025-04-24T15:34:22.256Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:22.256Z] Checked if tokens are valid: true, expires at: 1745510243142
+[debug] [2025-04-24T15:34:22.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05 [none]
+[debug] [2025-04-24T15:34:22.866Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05 200
+[debug] [2025-04-24T15:34:22.866Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gitlab-85c05 {"projectId":"gitlab-85c05","projectNumber":"821959175305","displayName":"gitlab","name":"projects/gitlab-85c05","resources":{"hostingSite":"gitlab-85c05"},"state":"ACTIVE","etag":"1_088c65be-e173-4afd-9d2e-d2b3da143f2c"}
+[info] i  hosting[gitlab-85c05]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[gitlab-85c05]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2025-04-24T15:34:22.883Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
